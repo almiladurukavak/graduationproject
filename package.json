@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@stdlib/iter-datespace": "^0.0.7"
+  }
+}
