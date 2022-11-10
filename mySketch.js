@@ -5,15 +5,14 @@ const colorProb = 1/3.0; // Proportion of colored rectangles
 const maxIter = 2; // How deep to recursively subdivide rectangles
 const rectMaxProportion = 0.8; // The maximum createCanvas of a rect division
 
+//xorshift128+ algorithm. math.random()
 
 function setup() {
 
 
-  purple = color(101, 81, 147)
-  bluish = color(109, 128, 172)
-  reddish = color(252, 71, 51)
-  greenish = color(131, 153, 97)
-  brown = color(181, 98, 69)
+  yellow = color(Math.floor(Math.random() * 5) + 250, Math.floor(Math.random() * 10) + 250, 0)
+  blue = color(0, 0, Math.floor(Math.random() * 5) + 250)
+  red = color(252, 71, 51)
 
 	createCanvas(800, 800);
   strokeWeight(lineThickness);
@@ -21,7 +20,7 @@ function setup() {
   noLoop();
 
 
-	 colors = [purple, bluish, greenish];
+	 colors = [yellow, blue, red];
 }
 
 function draw() {
