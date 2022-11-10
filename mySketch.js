@@ -5,12 +5,23 @@ const colorProb = 1/3.0; // Proportion of colored rectangles
 const maxIter = 2; // How deep to recursively subdivide rectangles
 const rectMaxProportion = 0.8; // The maximum createCanvas of a rect division
 
+
 function setup() {
+
+
+  purple = color(101, 81, 147)
+  bluish = color(109, 128, 172)
+  reddish = color(252, 71, 51)
+  greenish = color(131, 153, 97)
+  brown = color(181, 98, 69)
+
 	createCanvas(800, 800);
   strokeWeight(lineThickness);
   stroke(0);
   noLoop();
-	colors = [color('#DF2C26'), color('#F8D809'), color('#1966B2')]; // Red, yellow, blue
+
+
+	 colors = [purple, bluish, greenish];
 }
 
 function draw() {
